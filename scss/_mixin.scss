@@ -1,0 +1,83 @@
+/*============================== FONTS ==============================*/
+
+@mixin text_normal ($fz: 14px, $lh: 17px) {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+@mixin text_medium ($fz: 14px, $lh: 17px) {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+@mixin text_semibold ($fz: 17px, $lh: 20px) {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+@mixin text_bold ($fz: 50px, $lh: 60px) {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: $fz;
+    line-height: $lh;
+    color: #313031;
+}
+
+@mixin text_extrabold-white ($fz: 34px, $lh: 42px) {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+@mixin text_extrabold-grey ($fz: 40px, $lh: 49px) {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+    color: #313031;
+}
+
+
+
+
+
+
+@mixin text_semibold ($fz: 17px, $lh: 20px) {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+/*============================== BUTTON ==============================*/
+
+@mixin btn ($width: 266px, $height: 44px, $br: 3px) {
+    background: #313031;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    width: $width;
+    height: $height;
+    border-radius: $br;
+    color: #FFFFFF;
+    transition: .6s;
+
+    &:hover {
+        background: #FFFFFF;
+        transition: .6s;
+        color: #010201;
+    }
+}
