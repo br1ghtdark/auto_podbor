@@ -81,3 +81,22 @@
         color: #010201;
     }
 }
+
+@mixin btn-red ($width: 212px, $height: 44px, $br: 3px) {
+    background: #C30505;
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    width: $width;
+    height: $height;
+    border-radius: $br;
+    color: #FFFFFF;
+    transition: .6s;
+
+    &:hover {
+        background: #FFFFFF;
+        transition: .6s;
+        color: #C30505;
+    }
+}

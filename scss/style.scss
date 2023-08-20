@@ -115,8 +115,8 @@
             &::after {
                 content: url("../images/fon_blue.png");
                 position: absolute;
-                top: -900px;
-                left: -200px;
+                top: -711px;
+                left: -529px;
                 z-index: -5;
             }
         }
@@ -491,6 +491,7 @@
     margin-top: -132px;
 
     &__inner {
+        padding-bottom: 50px;
 
         &-danger {
             display: flex;
@@ -508,20 +509,21 @@
         &-head {
             text-align: right;
             margin-bottom: 64px;
-            &::after {
-                content: url("../images/fon_main-grey.png");
-                position: absolute;
-                top: 1670px;
-                left: -2px;
-                z-index: -5;
-            }
         }
 
         &-content {
+            position: relative;
             display: grid;
             grid-template:  repeat(6, 1fr) / 1fr 1fr;
             justify-items: end;
             margin-bottom: 105px;
+            &::after {
+                content: url("../images/fon_main-grey.png");
+                position: absolute;
+                top: -1048px;
+                left: -500px;
+                z-index: -5;
+            }
         }
 
         &-free {
@@ -609,5 +611,354 @@
             @include btn;
         }
     }
+}
+
+.price {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 69px;
+
+        &-title {
+            @include text_extrabold-white ($fz: 40px, $lh: 48px);
+        }
+
+        &-subtitle {
+            @include text_normal($fz: 28px, $lh: 34px);
+            letter-spacing: 5px;
+            margin-bottom: 34px;
+        }
+
+        &-container {
+            display: flex;
+        }
+    }
+
+    &__content {
+        width: 298px;
+        margin-right: 20px;
+        box-shadow: 1.7px 1.7px 6.7px 0px #0000001A;
+
+        &:nth-child(2) {
+            height: 802px;
+        }
+
+        &:last-child {
+            height: 633px;
+            margin-right: 0;
+        }
+
+        &-head {
+            display: flex;
+            align-items: center;
+            background-color: #6EC0E2;
+            height: 95px;
+            justify-content: center;
+        }
+
+        &-title {
+            @include text_extrabold-grey ($fz: 20px, $lh: 24px);
+        }
+
+        &-text {
+            background-color:#FFFFFF;
+            padding: 32px 0 49px 0;
+        }
+
+        &-order {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            &::before {
+                content: url("/images/icons/price_line.svg");
+                position: absolute;
+                top: -30px;
+            }
+        }
+    }
+
+    &__text {
+        @include text_medium;
+        position: relative;
+        color: #313031;
+        padding-bottom: 23px;
+
+        &::before {
+            position: absolute;
+            content: url("/images/icons/ellipse_blue.svg");
+            left: 25px;
+        }
+    }
+
+    &__order {
+
+        &-value {
+            @include text_bold ($fz: 30px, $lh: 37px);
+            margin-bottom: 20px;
+        }
+        
+        &-btn {
+            @include btn-red;
+            margin-bottom: 15px;
+        }
+
+        &-guarantees {
+            @include text_semibold ($fz: 16px, $lh: 19px);
+            text-decoration: underline;
+            color: #7B7B7B;
+            margin-bottom: 34px;
+        }
+    }
+}
+
+.free {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 23px;
+    }
+
+    &__head {
+        margin-bottom: 20px;
+
+        &-title {
+            @include text_extrabold-grey;
+        }
+
+        &-subtitle {
+            @include text_normal ($fz: 28px, $lh: 34px);
+            letter-spacing: 10px;
+            color: #313031;
+        }
+    }
+
+    &__text {
+        margin-bottom: 21px;
+        &-cont {
+            @include text_normal;
+            color: #313031;
+        }
+    }
+
+    &__subtext {
+        @include text_medium ($fz: 18px, $lh: 18px);
+        color: #313031;
+        margin-bottom: 13px;
+    }
+    &__img {
+        position: relative;
+        &::before {
+            content: url("/images/fon_free.png");
+            position: absolute;
+            top: -1582px;
+            left: -500px;
+            z-index: -7;
+        }
+    }
+}
+
+.example {
+    &__inner {
+
+        &-free {
+            position: relative;
+            width: 940px;
+            height: 175px;
+            background-color: #C30505;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__head {
+        text-align: center;
+        margin-bottom: 40px;
+
+        &-title {
+            @include text_extrabold-grey;
+        }
+
+        &-subtitle {
+            @include text_normal ($fz: 28px, $lh: 34px);
+            letter-spacing: 6px;
+            color: #313031;
+        }
+    }
+
+    &__slider {
+        align-self: flex-end;
+        margin-bottom: 66px;
+        margin-left: 60px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            width: 881px;
+        }
+
+        &-arrow {
+            position: relative;
+        }
+    }
+
+    &__item {
+
+        &-container {
+            position: relative;
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        &-img {
+        }
+
+        &-content {
+            position: absolute;
+            right: 115px;
+            top: 30px;
+            width: 395px;
+            background-color: #F8F8F8;
+            padding: 30px 0 30px 27px;
+        }
+
+        &-review {
+        }
+    }
+
+    &__content {
+        &-feature {
+        }
+
+        &-after {
+        }
+    }
+
+    &__feature {
+        &-title {
+            @include text_medium ($fz: 14px, $lh: 17px);
+            color: #989898;
+            margin-bottom: 3px;
+        }
+
+        &-text {
+            @include text_semibold ($fz: 20px, $lh: 25px);
+            position: relative;
+            color: #313031;
+            margin-bottom: 32px;
+
+            &::after {
+                content: url("/images/slider_line.svg");
+                position: absolute;
+                left: 0;
+                bottom: -22px;
+            }
+        }
+    }
+
+    &__after {
+
+        &-title {
+            @include text_medium ($fz: 16px, $lh: 19px);
+            color: #C31617;
+
+        }
+
+        &-text {
+            @include text_semibold ($fz: 30px, $lh: 37px);
+            color: #C31617;
+
+        }
+    }
+
+    &__review {
+        &-title {
+            @include text_semibold ($fz: 16px, $lh: 19px);
+            color: #313031;
+            margin-bottom: 12px;
+        }
+
+        &-text {
+            @include text_medium ($fz: 16px, $lh: 19px);
+            font-style: italic;
+            color: #313031;
+        }
+    }
+
+    &__arrow {
+        &-left {
+            position: absolute;
+            z-index: 100;
+            top: -310px;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6BC0E2;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+        }
+
+        &-right {
+            position: absolute;
+            z-index: 100;
+            top: -310px;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6BC0E2;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+        }
+    }
+
+    &__free {
+
+        &-title {
+            @include text_extrabold-white;
+            margin: 24px 0 5px 0;
+        }
+
+        &-text {
+            @include text_normal;
+            margin-bottom: 15px;
+        }
+
+        &-form {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__form {
+
+        &-lb {
+            margin-right: 8px;
+        }
+
+        &-input {
+            width: 266px;
+            height: 44px;
+            padding: 13px 0 13px 18px;
+            border-radius: 3px
+        }
+
+        &-btn {
+            @include btn;
+        }
+    }
+}
+
+
+.swiper-wrapper {
 }
 
