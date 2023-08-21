@@ -154,6 +154,13 @@ a {
 
 .header {
   position: relative;
+  /* &::after {
+      content: url("../images/headback.png");
+      position: absolute;
+      top: -10px;
+      left: 0;
+      z-index: -5;
+  } */
   /* &::before {
       content: "";
       position: absolute;
@@ -162,13 +169,6 @@ a {
       height: 2000px;
       z-index: -4;
   } */
-}
-.header::after {
-  content: url("../images/fon_grey.png");
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: -5;
 }
 .header__inner {
   display: -webkit-box;
@@ -256,10 +256,10 @@ a {
           align-items: center;
 }
 .selection__inner-free::after {
-  content: url("../images/fon_blue.png");
+  content: url("../images/headback.png");
   position: absolute;
-  top: -711px;
-  left: -529px;
+  top: -709px;
+  left: -532px;
   z-index: -5;
 }
 .selection__text:nth-child(1) {

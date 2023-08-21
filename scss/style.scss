@@ -29,13 +29,13 @@
 
 .header {
     position: relative;
-    &::after {
-        content: url("../images/fon_grey.png");
+    /* &::after {
+        content: url("../images/headback.png");
         position: absolute;
         top: -10px;
         left: 0;
         z-index: -5;
-    }
+    } */
 
     /* &::before {
         content: "";
@@ -114,12 +114,13 @@
             align-items: center;
 
             &::after {
-                content: url("../images/fon_blue.png");
+                content: url("../images/headback.png");
                 position: absolute;
-                top: -711px;
-                left: -529px;
+                top: -709px;
+                left: -532px;
                 z-index: -5;
             }
+            
         }
     }
 
