@@ -50,6 +50,7 @@
         display: flex;
         justify-content: space-between;
         padding: 26px 0 62px 0;
+        align-items: center;
 
         &-logo {
         }
@@ -962,3 +963,135 @@
 .swiper-wrapper {
 }
 
+
+.contacts {
+    margin-top: -85px;
+    height: 612px;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__map {
+    }
+
+    &__content {
+        position: absolute;
+        top: -450px;
+        padding: 29px 0 36px 34px;
+        background-color: #FFFFFF;
+        width: 300px;
+
+        &-title {
+            @include text_bold ($fz: 28px, $lh: 34px);
+            position: relative;
+            color: #313031;
+            margin-bottom: 32px;
+            &::after {
+                content: url("/images/contacts_line.svg");
+                position: absolute;
+                left: 0;
+                top: 24px;
+            }
+        }
+
+        &-about {
+            @include text_medium ($fz: 16px, $lh: 19px);
+            position: relative;
+            color: #989898;
+            margin-bottom: 35px;
+            &::after {
+                content: url("/images/contacts_line.svg");
+                position: absolute;
+                left: 0;
+                top: 90px;
+            }
+        }
+
+        &-work {
+        }
+    }
+
+    &__about {
+
+        &-address {
+            margin-bottom: 3px;
+        }
+
+        &-call {
+            @include text_bold ($fz: 20px, $lh: 24px);
+            display: flex;
+            margin-bottom: 3px;
+
+            & img {
+                margin-right: 8px;
+            }
+        }
+
+        &-email {
+        }
+    }
+
+    &__work {
+
+        &-text {
+            @include text_medium ($fz: 16px, $lh: 19px);
+            color: #989898;
+            margin-bottom: 3px;
+        }
+
+        &-time {
+            @include text_semibold ($fz: 15.5px, $lh: 18px);
+            color: #313031;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.footer {
+    position: relative;
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 39px 0 27px 0;
+
+        &-logo {
+        }
+
+        &-text {
+            @include text_normal;
+            max-width: 400px;
+            color: #848181;
+        }
+
+        &-info {
+        }
+    }
+
+    &__logo {
+    }
+
+    &__info {
+
+        &-call {
+            @include text_semibold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #313031;
+
+            & img {
+                margin-right: 10px;
+            }
+        }
+
+        &-time {
+            @include text_semibold($fz: 14px, $lh: 17px);
+            color: #313031;
+            width: 235px;
+        }
+    }
+}
