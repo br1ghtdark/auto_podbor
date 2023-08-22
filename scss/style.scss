@@ -1269,6 +1269,8 @@
             display: block;
             &-container {
                 display: block;
+                width: 298px;
+                margin: 0 auto;
             }
         }
     }
@@ -1499,13 +1501,27 @@
 
 @media (max-width: 776px) {
 
+    .header {
+        &__inner {
+            padding-bottom: 20px;
+        }
+    }
+
     .selection {
         &__inner {
             &-top {
                 margin-left: 110px;
             }
-            &-text {
 
+            &-free {
+                &::after {
+                    content: url("/images/fon_head-mobile.png");
+                    top: -558px;
+                    left: -248px;
+                }
+            }
+            &-text {
+                margin-bottom: 20px;
             }
         }
 
@@ -1528,6 +1544,10 @@
             &-text {
                 font-size: 12px;
                 line-height: 14px;
+            }
+
+            &-right {
+                padding: 9px 0 183px 0;
             }
         }
         &__text {
@@ -1614,6 +1634,11 @@
             &-content {
                 grid-template: repeat(12, 1fr) / 1fr;
                 margin-bottom: 10px;
+                &::after {
+                    content: url("/images/fon_grey-mobile.png");
+                    top: -1285px;
+                    left: -483px;
+                }
             }
         }
         &__head {
@@ -1673,6 +1698,11 @@
         &__img {
             & img {
                 width: 600px;
+            }
+            &::before {
+                content: url("/images/fon_free-mobile.png");
+                top: -1305px;
+                left: -406px;
             }
         }
     }

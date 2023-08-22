@@ -1500,6 +1500,8 @@ a {
   }
   .price__inner-container {
     display: block;
+    width: 298px;
+    margin: 0 auto;
   }
   .check__inner-content {
     display: -webkit-box;
@@ -1679,8 +1681,19 @@ a {
   }
 }
 @media (max-width: 776px) {
+  .header__inner {
+    padding-bottom: 20px;
+  }
   .selection__inner-top {
     margin-left: 110px;
+  }
+  .selection__inner-free::after {
+    content: url("/images/fon_head-mobile.png");
+    top: -558px;
+    left: -248px;
+  }
+  .selection__inner-text {
+    margin-bottom: 20px;
   }
   .selection__top-title {
     font-family: "Inter";
@@ -1704,6 +1717,9 @@ a {
   .selection__top-text {
     font-size: 12px;
     line-height: 14px;
+  }
+  .selection__top-right {
+    padding: 9px 0 183px 0;
   }
   .selection__text {
     margin-right: 10px;
@@ -1773,6 +1789,11 @@ a {
     grid-template: repeat(12, 1fr)/1fr;
     margin-bottom: 10px;
   }
+  .problems__inner-content::after {
+    content: url("/images/fon_grey-mobile.png");
+    top: -1285px;
+    left: -483px;
+  }
   .problems__head-title {
     font-size: 33px;
     line-height: 39px;
@@ -1815,6 +1836,11 @@ a {
   }
   .free__img img {
     width: 600px;
+  }
+  .free__img::before {
+    content: url("/images/fon_free-mobile.png");
+    top: -1305px;
+    left: -406px;
   }
   .example__head {
     padding-top: 15px;
