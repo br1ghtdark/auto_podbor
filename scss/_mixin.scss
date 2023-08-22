@@ -1,4 +1,5 @@
-/*============================== FONTS ==============================*/
+/*============================== FONTS DESCTOP ==============================*/
+/*============================== FONTS DESCTOP ==============================*/
 
 @mixin text_normal ($fz: 14px, $lh: 17px) {
     font-family: "Inter";
@@ -48,18 +49,58 @@
     color: #313031;
 }
 
+/*============================== FONTS MOBILE ==============================*/
+/*============================== FONTS MOBILE ==============================*/
 
+@mixin text_norma-mob ($fz: 14px, $lh: 17px) {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
 
+@mixin text_mediu-mob ($fz: 14px, $lh: 17px) {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
 
-
-
-@mixin text_semibold ($fz: 17px, $lh: 20px) {
+@mixin text_semibol-mob ($fz: 17px, $lh: 20px) {
     font-family: "Inter";
     font-weight: 600;
     font-size: $fz;
     line-height: $lh;
     color: #FFFFFF;
 }
+
+@mixin text_bol-mob ($fz: 50px, $lh: 60px) {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: $fz;
+    line-height: $lh;
+    color: #313031;
+}
+
+@mixin text_extrabold-whit-mob ($fz: 34px, $lh: 42px) {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+    color: #FFFFFF;
+}
+
+@mixin text_extrabold-gre-mob ($fz: 40px, $lh: 49px) {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+    color: #313031;
+}
+
+
 
 /*============================== BUTTON ==============================*/
 
@@ -99,4 +140,11 @@
         transition: .6s;
         color: #C30505;
     }
+}
+
+/*============================== BUTTON ==============================*/
+
+
+@mixin trn {
+    transition: all .6s;
 }

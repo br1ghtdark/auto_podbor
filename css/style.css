@@ -131,7 +131,11 @@ a {
   src: local("Inter-ExtraBoldItalic"), url("../fonts/Inter-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Inter-ExtraBoldItalic.woff") format("woff"), url("../fonts/Inter-ExtraBoldItalic.eot") format("eot");
   font-display: swap;
 }
-/*============================== FONTS ==============================*/
+/*============================== FONTS DESCTOP ==============================*/
+/*============================== FONTS DESCTOP ==============================*/
+/*============================== FONTS MOBILE ==============================*/
+/*============================== FONTS MOBILE ==============================*/
+/*============================== BUTTON ==============================*/
 /*============================== BUTTON ==============================*/
 .wrapper {
   min-height: 100%;
@@ -154,21 +158,6 @@ a {
 
 .header {
   position: relative;
-  /* &::after {
-      content: url("../images/headback.png");
-      position: absolute;
-      top: -10px;
-      left: 0;
-      z-index: -5;
-  } */
-  /* &::before {
-      content: "";
-      position: absolute;
-      background: 0px 0px / contain no-repeat url("../images/fon_blue.png");
-      width: 1800px;
-      height: 2000px;
-      z-index: -4;
-  } */
 }
 .header__inner {
   display: -webkit-box;
@@ -224,6 +213,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 65px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 .selection__inner-text {
   font-family: "Inter";
@@ -258,8 +250,8 @@ a {
 .selection__inner-free::after {
   content: url("../images/headback.png");
   position: absolute;
-  top: -709px;
-  left: -532px;
+  top: -723px;
+  left: -482px;
   z-index: -5;
 }
 .selection__text:nth-child(1) {
@@ -312,6 +304,7 @@ a {
 .selection__top-right {
   padding-top: 25px;
   padding: 25px 0 280px 0;
+  margin-left: -30px;
 }
 .selection__top-subtitle {
   font-family: "Inter";
@@ -675,7 +668,7 @@ a {
   content: url("../images/fon_main-grey.png");
   position: absolute;
   top: -1048px;
-  left: -500px;
+  left: -483px;
   z-index: -5;
 }
 .problems__inner-free {
@@ -986,7 +979,7 @@ a {
   content: url("/images/fon_free.png");
   position: absolute;
   top: -1582px;
-  left: -500px;
+  left: -483px;
   z-index: -7;
 }
 
@@ -1342,4 +1335,154 @@ a {
   color: #FFFFFF;
   color: #313031;
   width: 235px;
+}
+
+/*============================== MEDIA ==============================*/
+/*============================== MEDIA ==============================*/
+@media (max-width: 1150px) {
+  .check__inner-content {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    margin-left: -50px;
+  }
+}
+@media (max-width: 1050px) {
+  .check__inner-content {
+    margin-left: 0px;
+  }
+  .check__content-top {
+    margin-bottom: 58px;
+  }
+  .check__content-top .check__item:nth-child(3) .check__item-text::after {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    top: 114px;
+  }
+  .check__content-top .check__item:nth-child(2) {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    margin-right: 42px;
+  }
+  .check__content-car img {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    width: 800px;
+    margin-left: 66px;
+    margin-bottom: 47px;
+  }
+  .check__item {
+    margin-right: 34px;
+  }
+  .check__item-bot:nth-child(1) {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    margin-left: -15px !important;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 1000px) {
+  .selection__inner-top {
+    margin-left: 85px;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+  }
+  .trust__inner-head {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    margin-bottom: 75px;
+  }
+  .trust__inner-content {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .trust__inner-content .trust__content-item:nth-child(1) .trust__item-number::after {
+    left: -76px;
+  }
+  .trust__inner-content .trust__content-item:nth-child(2) .trust__item-number::before {
+    left: -38px;
+    top: -53px;
+  }
+  .trust__inner-content .trust__content-item:nth-child(3) .trust__item-number::after {
+    left: -49px;
+  }
+  .trust__inner-content .trust__content-item:nth-child(4) .trust__item-number::before {
+    top: -47px;
+    left: -83px;
+  }
+  .trust__content-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trust__item-number {
+    margin-bottom: 37px;
+  }
+  .trust__item-title {
+    padding-bottom: 48px;
+  }
+}
+@media (max-width: 967px) {
+  .selection__inner-top {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .selection__inner-free {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    margin: 0 auto;
+    width: 835px;
+  }
+  .selection__top-title {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 90px;
+    color: #FFFFFF;
+  }
+  .selection__top-title::after {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    content: "";
+    background-image: url("../images/auto_main.png");
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 740px;
+    height: 250px;
+    top: 101px;
+    left: -1px;
+  }
+  .selection__top-right {
+    padding: 9px 0 280px 0;
+    margin-left: 1px;
+  }
+  .selection__top-subtitle {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .selection__top-text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
 }
