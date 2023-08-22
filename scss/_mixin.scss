@@ -52,7 +52,7 @@
 /*============================== FONTS MOBILE ==============================*/
 /*============================== FONTS MOBILE ==============================*/
 
-@mixin text_norma-mob ($fz: 14px, $lh: 17px) {
+@mixin text_norma-mob ($fz: 12px, $lh: 14px) {
     font-family: "Inter";
     font-weight: 400;
     font-size: $fz;
@@ -60,7 +60,7 @@
     color: #FFFFFF;
 }
 
-@mixin text_mediu-mob ($fz: 14px, $lh: 17px) {
+@mixin text_mediu-mob ($fz: 8px, $lh: 10px) {
     font-family: "Inter";
     font-weight: 500;
     font-size: $fz;
@@ -68,7 +68,7 @@
     color: #FFFFFF;
 }
 
-@mixin text_semibol-mob ($fz: 17px, $lh: 20px) {
+@mixin text_semibol-mob ($fz: 10px, $lh: 12px) {
     font-family: "Inter";
     font-weight: 600;
     font-size: $fz;
@@ -76,7 +76,7 @@
     color: #FFFFFF;
 }
 
-@mixin text_bol-mob ($fz: 50px, $lh: 60px) {
+@mixin text_bol-mob ($fz: 12px, $lh: 14px) {
     font-family: "Inter";
     font-weight: 700;
     font-size: $fz;
@@ -84,7 +84,7 @@
     color: #313031;
 }
 
-@mixin text_extrabold-whit-mob ($fz: 34px, $lh: 42px) {
+@mixin text_extrabold-white-mob ($fz: 39px, $lh: 47px) {
     font-family: "Inter";
     font-weight: 800;
     font-size: $fz;
@@ -92,7 +92,7 @@
     color: #FFFFFF;
 }
 
-@mixin text_extrabold-gre-mob ($fz: 40px, $lh: 49px) {
+@mixin text_extrabold-grey-mob ($fz: 20px, $lh: 24px) {
     font-family: "Inter";
     font-weight: 800;
     font-size: $fz;
